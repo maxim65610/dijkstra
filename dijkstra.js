@@ -9,7 +9,12 @@ let j = 0;
 let stack = [];
 
 let priority= new Object();
-priority['-'] = 0; priority['+'] = 0; priority['*'] = 1; priority['/'] = 1; priority['^'] = 2;priority['('] = -1;
+priority['-'] = 0; 
+priority['+'] = 0; 
+priority['*'] = 1; 
+priority['/'] = 1; 
+priority['^'] = 2;
+priority['('] = -1;
 while(i < spl.length){
     if(/\d/.test(spl[i])){
         d += spl[i];
